@@ -141,16 +141,41 @@ def click(event:int):
 
 
 def determine_winner(player1,player2):
+
+    winning_combos = [
+
+        [0,1,2], [0,3,6], [0,4,8], [2,4,6], [1,4,7], 
+        [2,5,8], [3,4,5], [6,7,8]
+
+
+    ]
+
     winner = ""
 
-    if player1 == player1[0,1,2] or player1[0,3,6] or player1[0,4,8] or player1[2,4,6] or player1[1,4,7] or player1[2,5,8] or player1[3,4,5] or player1[6,7,8]:
-        winner = player1
-        print("Player 1 Wins!")
-    elif player2 == player2[0,1,2] or player2[0,3,6] or player2[0,4,8] or player2[2,4,6] or player2[1,4,7] or player2[2,5,8] or player2[3,4,5] or player2[6,7,8]:
-        winner = player2
-        print("Player 2 Wins!")
-    else:
-        winner == "Nobody Wins"
+
+    for move in winning_combos:
+        if player1 == winning_combos:
+            print("Player 1 Wins!")
+            winner = player1
+
+        elif player2 == winning_combos:
+            print("Player 2 Wins!")
+            winner = player2
+
+        else:
+            winner == "Nobody Wins"
+
+
+    
+
+   ## if player1 == player1[0,1,2] or player1[0,3,6] or player1[0,4,8] or player1[2,4,6] or player1[1,4,7] or player1[2,5,8] or player1[3,4,5] or player1[6,7,8]:
+        
+        
+       
+  ##  elif player2 == player2[0,1,2] or player2[0,3,6] or player2[0,4,8] or player2[2,4,6] or player2[1,4,7] or player2[2,5,8] or player2[3,4,5] or player2[6,7,8]:
+        
+        
+    
 
     return winner
 
