@@ -154,11 +154,11 @@ def determine_winner(player1,player2):
 
 
     for move in winning_combos:
-        if player1 == winning_combos:
+        if move in winning_combos and player1 == winning_combos:
             print("Player 1 Wins!")
             winner = player1
 
-        elif player2 == winning_combos:
+        elif move in winning_combos and player2 == winning_combos:
             print("Player 2 Wins!")
             winner = player2
 
