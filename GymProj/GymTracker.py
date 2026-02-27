@@ -35,7 +35,7 @@ class Workout:
 
 
     def __str__(self):
-        return print(f"{self.reps} for {self.lift_sets} sets")
+        return f"{self.reps} for {self.lift_sets} sets"
 
 
     def addExercise(self, exercise):
@@ -60,7 +60,7 @@ class Workout:
 
         progress_percent = (completed_e / total_exercises) * 100
 
-        print(f"You are {progress_percent} done with your workout!")
+        print("You are {progress_percent} done with your workout!")
 
         return progress_percent
 
